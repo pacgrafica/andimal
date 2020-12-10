@@ -1,0 +1,255 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Rajdhani SemiBold;
+    background: #fe8c00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f83600, #fe8c00);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+section img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+nav {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    color: white;
+    z-index: 3;
+}
+
+a {
+    padding: 20px;
+    width: 250px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    left: 5%;
+}
+
+.btn-neon {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 15px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    width: 15%;
+}
+
+.btn-neon:hover {
+    background: #ffffff00;
+    box-shadow: 0 0 10px #f3d00a, 0 0 40px#f3d00a.0 0 80px #f3d00a;
+    color: #fff;
+    width: 25%;
+    transition-delay: 1s;
+}
+
+.btn-neon span {
+    position: absolute;
+    display: block;
+}
+
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 25%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f3d00a);
+}
+
+.btn-neon:hover #span1 {
+    left: 5%;
+    transition: 1s;
+}
+
+#span3 {
+    bottom: 0;
+    left: 5%;
+    width: 25%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #f3d00a);
+}
+
+.btn-neon:hover #span3 {
+    left: 5%;
+    transition: 2s;
+    transition-delay: 0.5s;
+}
+
+#span2 {
+    top: 0;
+    left: -100%;
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #f3d00a);
+}
+
+.btn-neon:hover #span2 {
+    left: 100%;
+    transition: 0.75s;
+}
+
+nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    animation: moverizquieda 1s ease-in;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    margin-top: 15px;
+    width: 340px;
+    height: 580px;
+    background-color: rgba(245, 242, 234, 0.247);
+    border-radius: 10px;
+    box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.model {
+    height: 300px;
+    max-height: 100%;
+}
+
+.detalis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.detalis {
+    color: white;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.iformacion {
+    color: #ffa4358e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.box:hover {
+    background: #fe8c00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f83600, #fe8c00);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transform-style: preserve-3d;
+    transform: scale(1.02);
+    transition: all ease 0.3s;
+}
+
+.box:hover .iformacion {
+    color: #fdf8f4c0;
+    transition: all ease 0.5s;
+}
+
+
+/*--responsive for mobile phone--*/
+
+@media(max-width:720px) {
+    .box {
+        width: 100%;
+        height: 500px;
+    }
+    .model {
+        height: 250px;
+    }
+    .details p {
+        font-size: 16px;
+        width: 250px;
+    }
+}
+
+@keyframes moverizquieda {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1, transform translate(0);
+    }
+}
+
+@keyframes arriba {
+    0% {
+        opacity: 0;
+        transform: translatey(-100px);
+    }
+    100% {
+        opacity: 1, transform translate(0);
+    }
+}
+
+.nubes {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    animation: moverizquieda 50s ease-in;
+}
+
+section img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+p {
+    font-family: Rajdhani;
+}

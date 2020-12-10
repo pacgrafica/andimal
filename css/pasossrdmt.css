@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Rajdhani SemiBold;
+}
+
+section img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+nav {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    color: white;
+    z-index: 3;
+}
+
+a {
+    padding: 20px;
+    width: 250px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    left: 5%;
+}
+
+.btn-neon {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 15px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    width: 15%;
+}
+
+.btn-neon:hover {
+    background: #ffffff00;
+    box-shadow: 0 0 10px #f3d00a, 0 0 40px#f3d00a.0 0 80px #f3d00a;
+    color: #fff;
+    width: 25%;
+    transition-delay: 1s;
+}
+
+.btn-neon span {
+    position: absolute;
+    display: block;
+}
+
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 25%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f3d00a);
+}
+
+.btn-neon:hover #span1 {
+    left: 5%;
+    transition: 1s;
+}
+
+#span3 {
+    bottom: 0;
+    left: 5%;
+    width: 25%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #f3d00a);
+}
+
+.btn-neon:hover #span3 {
+    left: 5%;
+    transition: 2s;
+    transition-delay: 0.5s;
+}
+
+#span2 {
+    top: 0;
+    left: -100%;
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #f3d00a);
+}
+
+.btn-neon:hover #span2 {
+    left: 100%;
+    transition: 0.75s;
+}
+
+nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    animation: moverizquieda 1s ease-in;
+}
+
+.nubes {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    animation: moverizquieda 30s ease-in;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+}
+
+@keyframes moverizquieda {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1, transform translate(0);
+    }
+}
+
+.swiper-slide {
+    width: 80px;
+    text-align: center;
+    font-size: 15px;
+    background-color: rgba(128, 128, 128, 0.11);
+    animation: camb 2s infinite alternate linear;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+p {
+    font-family: Rajdhani;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-align: center;
+    border: 1px dotted rgba(255, 255, 255, 0);
+    padding: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    color: white;
+}

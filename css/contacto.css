@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Rajdhani SemiBold;
+}
+
+section img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -1;
+}
+
+nav {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    color: white;
+    z-index: 3;
+}
+
+a {
+    padding: 20px;
+    width: 250px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    left: 5%;
+}
+
+.btn-neon {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 15px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    width: 15%;
+}
+
+.btn-neon:hover {
+    background: #ffffff00;
+    box-shadow: 0 0 10px #f3d00a, 0 0 40px#f3d00a.0 0 80px #f3d00a;
+    width: 25%;
+    color: #fff;
+    transition-delay: 1s;
+}
+
+.btn-neon span {
+    position: absolute;
+    display: block;
+}
+
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 25%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f3d00a);
+}
+
+.btn-neon:hover #span1 {
+    left: 5%;
+    transition: 1s;
+}
+
+#span3 {
+    bottom: 0;
+    left: 5%;
+    width: 25%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #f3d00a);
+}
+
+.btn-neon:hover #span3 {
+    left: 5%;
+    transition: 2s;
+    transition-delay: 0.5s;
+}
+
+#span2 {
+    top: 0;
+    left: -100%;
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #f3d00a);
+}
+
+.btn-neon:hover #span2 {
+    left: 100%;
+    transition: 0.75s;
+}
+
+@keyframes moverizquieda {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1, transform translate(0);
+    }
+}
+
+.nubes {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    animation: moverizquieda 20s ease-in;
+}
+
+form {
+    font-family: Rajdhani SemiBold;
+    font-size: 20px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.082);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    box-shadow: 7px 8px 10px #6b707052;
+    margin-top: 13%;
+    color: #fff;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: #fff;
+}
+
+input,
+textarea {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+}
+
+#boton {
+    background-color: rgba(247, 244, 244, 0.062);
+    padding: 20px;
+}
